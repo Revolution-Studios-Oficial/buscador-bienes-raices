@@ -1,0 +1,180 @@
+video#vidFondo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    left: 0;
+    top: 0;
+    background-size: cover;
+
+}
+
+.contenedor{
+  background-color: rgba(242, 242, 242, 0.5);
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 700px;
+  height: auto;
+  align-content: flex-start;
+}
+
+.rowTitulo{
+  width: 100%;
+  text-align: center;
+  background-color: #648C7D;
+  color: #F2F2F2;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 130px;
+}
+.colFiltros{
+  width: 25%;
+  height: 100%;
+  min-height: 570px;
+}
+.filtrosContenido, .colContenido, .colFiltros form{
+  min-height: 570px;
+}
+.filtrosContenido{
+  width: 100%;
+  margin: 0 0;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.tituloFiltros{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.tituloFiltros h5{
+    font-size: 1.3rem;
+}
+.filtroCiudad{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.filtroCiudad .select-wrapper{
+  margin: 25px auto;
+  width: 90%;
+}
+.filtroTipo{
+  width: 100%;
+  height: 110px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Posicionamiento del texto Tipo */
+.filtroTipo label{
+  position: relative;
+  display: block;
+  top: auto;
+  left: auto;
+  transform: none;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Posicionamiento del menú desplegable */
+.filtroTipo .select-wrapper{
+  margin: 0 auto;
+  width: 90%;
+}
+}
+.filtroPrecio{
+  margin: 15px auto;
+  width: 90%;
+  height: 100px;
+}
+.filtroPrecio label{
+  font-size: 1rem;
+}
+.botonField{
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+.botonField input{
+  color: #648C7D;
+}
+.colContenido{
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  padding: 20px;
+}
+.tituloContenido{
+  width: 100%;
+  min-height: 170px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 5px;
+}
+.tituloContenido h5{
+  width: 100%;
+  margin: 0.5rem 5px;
+  margin-bottom: 2rem;
+  height: 10px;
+  font-size: 2rem;
+}
+
+.tituloContenido button{
+  background: #648C7D;
+  color: #F2F2F2;
+  margin-top: 2rem;
+  margin-right: 1rem;
+
+}
+.divider{
+  width: 100%;
+}
+.itemMostrado{
+  width: 100%;
+  margin-top: 0.4rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.itemMostrado img{
+  width: 35% !important;
+}
+.precioTexto{
+  font-size: 1.3rem;
+  color: #ffab40;
+}
+.card-stacked{
+  width: 65%;
+}
+.card-action{
+  text-align: right;
+}
+
+/* Ajustes sencillos para mostrar los resultados y adaptarse a pantallas pequeñas. */
+body { background: #e9ecef; font-family: Arial, sans-serif; }
+.contenedor { background: rgba(242,242,242,.95); }
+.rowTitulo h1 { padding-top: 28px; font-size: 2.7rem; }
+.itemMostrado { background: #fff; }
+.itemMostrado .card-image { width: 35%; }
+.itemMostrado .card-image img { width: 100%; height: 190px; object-fit: cover; }
+.itemMostrado .card-stacked { width: 65%; }
+.resumen { width: 100%; text-align: center; }
+.botonTodos { background: #648C7D; color: white; margin: 8px; }
+@media (max-width: 800px) {
+  .contenedor { width: 96%; margin: 10px auto; }
+  .colFiltros, .colContenido { width: 100%; }
+  .filtrosContenido, .colContenido, .colFiltros form { min-height: auto; }
+  .colContenido { padding: 10px; }
+  .itemMostrado { display: block; }
+  .itemMostrado .card-image, .itemMostrado .card-stacked { width: 100%; }
+}

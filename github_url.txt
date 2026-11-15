@@ -1,0 +1,2 @@
+Pega aquí la URL de tu repositorio de GitHub cuando publiques el proyecto.
+Ejemplo: https://github.com/tuusuario/buscador-bienes-raices
